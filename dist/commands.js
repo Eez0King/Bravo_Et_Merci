@@ -1,0 +1,2 @@
+Office.onReady(function(){var e=Office.context.mailbox.userProfile;console.log(e.displayName),console.log(e.emailAddress)}),Office.actions.associate("action",function(e){var o={type:Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,message:"Performed action.",icon:"Icon.80x80",persistent:!0};Office.context.mailbox.item.notificationMessages.replaceAsync("ActionPerformanceNotification",o),e.completed()});
+//# sourceMappingURL=commands.js.map
